@@ -12,6 +12,9 @@ public class Car {
     List<Car> carList = new ArrayList<Car>();
     List<String> brandList = new ArrayList<String>();
 
+    public Car() {
+    }
+
     public List<Car> getCarList() {
         Car ford = new Car("Ford", "Mustang", "Red");
         Car nissan = new Car("Nissan", "Sentra", "Black");
@@ -103,6 +106,10 @@ public class Car {
 
     public String getModel() {
         return "This cars model is a " + this.model;
+    }
+
+    public String getMake() {
+        return this.brand;
     }
 
 }
